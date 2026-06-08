@@ -1,0 +1,63 @@
+{
+  "theme": {
+    "preset": "custom",
+    "variables": {
+      "--primary": "#ff6a00",
+      "--primary-light": "#ffbf80",
+      "--primary-dark": "#9a3900",
+      "--accent": "#8fa8ff",
+      "--accent-light": "#dbe3ff",
+      "--info": "#4fd0ff",
+      "--success": "#68f2b4",
+      "--bg-dark": "#07111e"
+    },
+    "customVariables": {
+      "--primary": "#ff6a00",
+      "--primary-light": "#ffbf80",
+      "--primary-dark": "#9a3900",
+      "--accent": "#8fa8ff",
+      "--accent-light": "#dbe3ff",
+      "--info": "#4fd0ff",
+      "--success": "#68f2b4",
+      "--bg-dark": "#07111e"
+    }
+  },
+  "bgm": {
+    "mode": "custom",
+    "preset": "ambient",
+    "volume": 0.3,
+    "custom": {
+      "name": "meta.mp3",
+      "path": "preview-assets/bgm/20260519-164555_meta.mp3",
+      "url": "/slide/cursorai-post-2056415413077233983/preview-assets/bgm/20260519-164555_meta.mp3"
+    }
+  },
+  "subtitles": {
+    "enabled": true,
+    "color": "#ffffff",
+    "fontSize": 18,
+    "bottom": 152,
+    "maxLines": 1
+  },
+  "visuals": {
+    "colorMode": "dark",
+    "backgroundColor": "#07111e",
+    "gridEnabled": false,
+    "gridLight": "#8fa8ff",
+    "iconGlow": "#ff6a00",
+    "iconBacklight": "#4fd0ff",
+    "iconLight": "#68f2b4",
+    "backgroundFx": "scan",
+    "customValues": {
+      "backgroundColor": "#07111e",
+      "gridLight": "#8fa8ff",
+      "iconGlow": "#ff6a00",
+      "iconBacklight": "#4fd0ff",
+      "iconLight": "#68f2b4"
+    }
+  },
+  "slides": {
+    "deletedIds": [],
+    "scriptLines": []
+  }
+}

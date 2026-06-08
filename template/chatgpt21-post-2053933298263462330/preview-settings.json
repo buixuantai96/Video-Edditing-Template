@@ -1,0 +1,59 @@
+{
+  "theme": {
+    "preset": "custom",
+    "variables": {
+      "--primary": "#34d399",
+      "--primary-light": "#bbf7d0",
+      "--primary-dark": "#064e3b",
+      "--accent": "#60a5fa",
+      "--accent-light": "#bfdbfe",
+      "--info": "#38bdf8",
+      "--success": "#22c55e",
+      "--bg-dark": "#020b08"
+    },
+    "customVariables": {
+      "--primary": "#34d399",
+      "--primary-light": "#bbf7d0",
+      "--primary-dark": "#064e3b",
+      "--accent": "#60a5fa",
+      "--accent-light": "#bfdbfe",
+      "--info": "#38bdf8",
+      "--success": "#22c55e",
+      "--bg-dark": "#020b08"
+    }
+  },
+  "bgm": {
+    "mode": "custom",
+    "preset": "ambient",
+    "volume": 0.3,
+    "custom": {
+      "name": "meta.mp3",
+      "path": "preview-assets/bgm/20260511-075909_meta.mp3",
+      "url": "/slide/chatgpt21-post-2053556436475461786/preview-assets/bgm/20260511-075909_meta.mp3"
+    }
+  },
+  "subtitles": {
+    "enabled": true,
+    "color": "#ec9a3c",
+    "fontSize": 15,
+    "bottom": 96,
+    "maxLines": 2
+  },
+  "visuals": {
+    "colorMode": "dark",
+    "backgroundColor": "#020b08",
+    "gridEnabled": false,
+    "gridLight": "#34d399",
+    "iconGlow": "#34d399",
+    "iconBacklight": "#60a5fa",
+    "iconLight": "#bbf7d0",
+    "backgroundFx": "scan",
+    "customValues": {
+      "backgroundColor": "#020b08",
+      "gridLight": "#34d399",
+      "iconGlow": "#34d399",
+      "iconBacklight": "#60a5fa",
+      "iconLight": "#bbf7d0"
+    }
+  }
+}

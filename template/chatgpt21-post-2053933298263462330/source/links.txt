@@ -1,0 +1,5 @@
+Original tweet: https://x.com/chatgpt21/status/2053933298263462330
+Quoted previous tweet: https://x.com/chatgpt21/status/2053556436475461786
+Payment screenshot from tweet: https://pbs.twimg.com/media/HIEIrpqXUAEoGLe.png
+Local payment screenshot: source/payment-second.png
+Local full tweet screenshot from user: source/tweet-screenshot.png

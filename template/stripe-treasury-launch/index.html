@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stripe Link Wallet – Slide Presentation</title>
+  <meta name="description" content="Stripe Link Wallet for Agents: AI giờ có thể tự chi tiêu an toàn với cơ chế bảo mật tuyệt đối." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="main-wrapper">
+
+    <!-- Script Panel -->
+    <div class="script-panel" id="scriptPanel">
+      <div class="script-panel-title"><i class="fa-solid fa-scroll"></i> Script</div>
+      <div class="script-panel-badge" id="scriptSlideBadge">⏸ Ready</div>
+      <div class="script-panel-text" id="scriptText">Bấm vào slide để bắt đầu...</div>
+    </div>
+
+    <!-- Audio Control Panel -->
+    <div class="audio-panel" id="audioPanel">
+      <div class="audio-panel-title"><i class="fa-solid fa-sliders"></i> Âm Thanh</div>
+      <div class="audio-group">
+        <label class="audio-label"><i class="fa-solid fa-music"></i> Nhạc nền</label>
+        <select id="bgmSelect" onchange="switchBGM(this.value)">
+          <option value="ambient" selected>🌊 Ambient</option>
+          <option value="cinematic">🎬 Cinematic</option>
+          <option value="lofi">☕ Lo-fi</option>
+          <option value="piano">🎹 Piano</option>
+          <option value="dark">🌑 Dark</option>
+          <option value="none">🔇 Tắt</option>
+        </select>
+      </div>
+      <div class="audio-panel-divider"></div>
+      <div class="audio-slide-header">
+        <span class="audio-slide-badge" id="audioPanelSlide">⏸ Ready</span>
+        <div class="audio-slide-nav">
+          <button class="audio-nav-btn" onclick="audioPanelPrev()"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="audio-nav-btn" onclick="audioPanelNext()"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+      <div class="audio-group">
+        <label class="audio-label"><i class="fa-solid fa-forward"></i> Chuyển slide</label>
+        <select id="transitionSelect" onchange="setSlideTransition(currentSlide, this.value)">
+          <option value="gong">🔔 Gong</option><option value="rise">📈 Rise</option>
+          <option value="bass">🥁 Bass</option><option value="chime">✨ Chime</option>
+          <option value="sweep">🌊 Sweep</option><option value="boom">💥 Boom</option>
+          <option value="alarm">🚨 Alarm</option><option value="chord">🎵 Chord</option>
+          <option value="ascending">⬆️ Ascending</option><option value="retro">🕹️ Retro</option>
+          <option value="minimal">💎 Minimal</option><option value="dramatic">🎭 Dramatic</option>
+        </select>
+      </div>
+      <div class="audio-group">
+        <label class="audio-label"><i class="fa-solid fa-wand-magic-sparkles"></i> Hiện element</label>
+        <select id="revealSelect" onchange="setSlideReveal(currentSlide, this.value)">
+          <option value="ping">💫 Ping</option><option value="pop">🫧 Pop</option>
+          <option value="chime">🔔 Chime</option><option value="click">🖱️ Click</option>
+          <option value="bubble">💧 Bubble</option><option value="woosh">💨 Woosh</option>
+          <option value="sparkle">✨ Sparkle</option><option value="drop">🎯 Drop</option>
+          <option value="tick">⏱️ Tick</option><option value="bell">🛎️ Bell</option>
+          <option value="blip">📡 Blip</option><option value="snap">👌 Snap</option>
+        </select>
+      </div>
+      <div class="audio-btn-row">
+        <button class="audio-test-btn" onclick="testTransition()"><i class="fa-solid fa-forward"></i> Test</button>
+        <button class="audio-test-btn" onclick="testReveal()"><i class="fa-solid fa-wand-magic-sparkles"></i> Test</button>
+      </div>
+    </div>
+
+    <div id="slideContainer" class="slide-container">
+      <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+      <div class="brand-top-left"><span>@viro</span></div>
+      <div class="brand-bottom-right"><span>@viro</span></div>
+
+      <!-- Slide 1: Hook & Video -->
+      <div class="slide active" data-slide="0">
+        <div class="slide-bg slide-bg-1"></div>
+        <div class="slide-content">
+          <div class="slide-element fade-up" style="margin-bottom: 20px; transition: opacity 0.5s ease;">
+            <div class="icon-badge icon-badge-large" style="margin-bottom: 15px;">
+              <i class="fa-solid fa-building-columns"></i>
+            </div>
+            <h1 class="title-main title-shimmer title-glitch" style="font-size: 40px;">Stripe<br/><span class="gradient-text">Treasury</span></h1>
+            <p class="subtitle" style="margin-top: 15px;">Hệ sinh thái ngân hàng doanh nghiệp cho phép AI trực tiếp nhúng tay vào quản lý tiền.</p>
+            <div class="tag-row" style="margin-top: 15px;">
+              <span class="tag"><i class="fa-solid fa-robot"></i> #AI</span>
+              <span class="tag"><i class="fa-solid fa-wallet"></i> #Treasury</span>
+            </div>
+          </div>
+          <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; pointer-events: none;">
+            <div class="slide-element scale-in" style="width: 100%; pointer-events: auto;">
+              <div class="video-wrapper" style="width: 100%; max-width: 340px; margin: 0 auto; border-radius: 12px; overflow: hidden; border: 2px solid rgba(255,255,255,0.1); box-shadow: 0 4px 15px rgba(0,0,0,0.5); aspect-ratio: 16/9; position: relative;">
+                <video id="demoVideo" src="demo.mp4" playsinline style="width: 100%; height: 100%; display: block; object-fit: cover; background: #000;"></video>
+              </div>
+              <div style="margin-top: 8px; font-size: 11px; color: rgba(255,255,255,0.5); display: flex; align-items: center; justify-content: center; gap: 5px;">
+                <i class="fa-brands fa-x-twitter"></i> Source: @stripe
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2: Highlight mode (Đa tiền tệ, Chuyển khoản, Hoàn tiền 2%, Credit) -->
+      <div class="slide" data-slide="1" data-mode="highlight">
+        <div class="slide-bg slide-bg-4"></div>
+        <div class="slide-content">
+          <div class="slide-element fade-up" data-delay="0">
+            <div class="icon-badge icon-badge-large icon-badge-accent">
+              <i class="fa-solid fa-vault"></i>
+            </div>
+            <h2 class="slide-title">Lưu Trữ <span class="gradient-text">Đa Năng</span></h2>
+            <div class="benefit-grid">
+              <div class="benefit-card highlightable">
+                <i class="fa-brands fa-bitcoin"></i>
+                <span>Ung dung trữ stablecoin tránh bão tỷ giá</span>
+              </div>
+              <div class="benefit-card highlightable">
+                <i class="fa-solid fa-earth-americas"></i>
+                <span>Chuyển khoản đối tác 160 quốc gia miễn phí</span>
+              </div>
+              <div class="benefit-card highlightable" style="grid-column: span 2;">
+                <i class="fa-solid fa-money-bill-wave"></i>
+                <span>Hoàn tiền 2% khi quẹt thẻ Stripe ăn đứt thị trường</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3: Traffic-light mode (Cộng đồng) -->
+      <div class="slide" data-slide="2" data-mode="traffic-light">
+        <div class="slide-bg slide-bg-5"></div>
+        <div class="slide-content">
+          <div class="slide-element fade-up" data-delay="0">
+            <div class="icon-badge icon-badge-large icon-badge-purple">
+              <i class="fa-solid fa-comments"></i>
+            </div>
+            <h2 class="slide-title">Phản Ứng <span class="gradient-text-2">Trái Chiều</span></h2>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot lightable" data-light-color="green"></div>
+                <div class="timeline-content">
+                  <div class="timeline-label">Phe Ủng Hộ</div>
+                  <p><i class="fa-solid fa-thumbs-up"></i> Hạ tầng bắt buộc cho nền kinh tế tự động hóa</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot lightable" data-light-color="red"></div>
+                <div class="timeline-content">
+                  <div class="timeline-label">Phe Cẩn Trọng</div>
+                  <p><i class="fa-solid fa-triangle-exclamation"></i> Vẫn e dè về phí ẩn và rào cản pháp lý quốc tế</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot lightable" data-light-color="yellow"></div>
+                <div class="timeline-content">
+                  <div class="timeline-label">Đa phần</div>
+                  <p><i class="fa-solid fa-check"></i> Thừa nhận cuộc chơi tài chính đã sang trang</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4: Hệ quả -->
+      <div class="slide" data-slide="3">
+        <div class="slide-bg slide-bg-6"></div>
+        <div class="slide-content">
+          <div class="slide-element fade-up">
+            <div class="icon-badge icon-badge-large icon-badge-info">
+              <i class="fa-solid fa-microchip"></i>
+            </div>
+            <h2 class="slide-title">Giao Thức <span class="gradient-text">MCP</span></h2>
+          </div>
+          <div class="slide-element scale-in">
+            <div class="info-card card-success" style="margin-bottom: 20px;">
+              <div class="card-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+              <p>AI agent có thể tự đọc số dư và <strong>thanh toán chuẩn xác</strong></p>
+            </div>
+          </div>
+          <div class="slide-element scale-in">
+            <div class="info-card card-warning">
+              <div class="card-icon"><i class="fa-solid fa-rocket"></i></div>
+              <p>Từng bước trở thành <strong>Hệ điều hành tài chính</strong> tối thượng</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 5: Kết luận -->
+      <div class="slide" data-slide="4">
+        <div class="slide-bg slide-bg-7"></div>
+        <div class="slide-content">
+          <div class="slide-element fade-up">
+            <div class="icon-badge icon-badge-large icon-badge-warning">
+              <i class="fa-solid fa-handshake"></i>
+            </div>
+            <h2 class="slide-title">Kết Luận</h2>
+            <div class="conclusion-box">
+              <p class="conclusion-text">Két Sắt <strong class="gradient-text-2">AI</strong></p>
+              <div class="divider"></div>
+              <p class="conclusion-sub">Bạn đã sẵn sàng mở cửa két sắt cho AI chưa?</p>
+            </div>
+          </div>
+          <div class="slide-element fade-up" data-delay="1000">
+            <div class="source-tag">
+              <i class="fa-solid fa-bell"></i> Follow Viro để không bỏ lỡ tin công nghệ mỗi ngày!
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="side-controls">
+      <button class="side-btn" id="muteBtn" onclick="toggleMute()"><i class="fa-solid fa-volume-high"></i></button>
+      <div class="side-divider"></div>
+      <button class="side-btn" id="prevBtn" onclick="prevSlide()"><i class="fa-solid fa-chevron-up"></i></button>
+      <div class="side-counter"><span id="currentSlide">1</span>/<span id="totalSlides">5</span></div>
+      <button class="side-btn" id="nextBtn" onclick="nextSlide()"><i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

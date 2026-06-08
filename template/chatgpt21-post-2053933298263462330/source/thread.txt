@@ -1,0 +1,246 @@
+
+@chatgpt21 (Chris):
+Codex got me paid again.
+
+I asked it to make me $5, yesterday & It found paid open-source tasks, submitted transparent AI-assisted PRs, followed up, and yesterday got a $16.88 PayPal payment.
+
+Today another accepted PR (from yesterday) paid out through OpenPledge: $6.80.
+
+Running total: $23.68.
+
+Meaning that we're already in profitability for our $20 subscription. However, I will upgrade to the $100 subscription as I have hit day limits twice now and I think there's a lot more potential.
+🖼️ https://pbs.twimg.com/media/HIEIrpqXUAEoGLe.png
+┌─ QT @chatgpt21:
+│ Codex made me money without me doing anything..
+│ 
+│ Huge turning point for me today, I asked Codex to go off and make me $5. It went out, found a small open-source security/audit bounty path, made a legit PR, followed up with the maintainer, kept my payment details private - (withou...
+│ 🖼️ https://pbs.twimg.com/media/HH-yiFpXkAA6k8G.jpg
+└─ https://x.com/chatgpt21/status/2053556436475461786
+📅 Mon May 11 20:20:33 +0000 2026
+🔗 https://x.com/chatgpt21/status/2053933298263462330
+──────────────────────────────────────────────────
+
+@ChadLahman (chad lahman):
+@chatgpt21 What reasoning level are you using
+📅 Mon May 11 20:23:11 +0000 2026
+🔗 https://x.com/ChadLahman/status/2053933962251182205
+──────────────────────────────────────────────────
+
+@AndrewCurran_ (Andrew Curran):
+@chatgpt21 Chatty has deeply internalized 働かざる者、食うべからず.
+📅 Mon May 11 20:25:49 +0000 2026
+🔗 https://x.com/AndrewCurran_/status/2053934625404363176
+──────────────────────────────────────────────────
+
+@kejriwal_ankitt (AK):
+@chatgpt21 It feels like arbitrage. I think this profit will soon disappear from the market as more and more people start doing it.
+📅 Mon May 11 20:27:53 +0000 2026
+🔗 https://x.com/kejriwal_ankitt/status/2053935144051020236
+──────────────────────────────────────────────────
+
+@chatgpt21 (Chris):
+@AndrewCurran_ I think it’s so funny that Chatgpt is basically like the hunter and he’s going out looking for food for me and trying to bring it back to the tribe so that we could survive together
+📅 Mon May 11 20:28:49 +0000 2026
+🔗 https://x.com/chatgpt21/status/2053935378009063759
+──────────────────────────────────────────────────
+
+@chatgpt21 (Chris):
+@ChadLahman XHigh
+📅 Mon May 11 20:28:57 +0000 2026
+🔗 https://x.com/chatgpt21/status/2053935413316759974
+──────────────────────────────────────────────────
+
+@vibebuild (vibebuilder):
+@chatgpt21 How are you avoiding the cybersecurity flags?
+📅 Mon May 11 20:32:57 +0000 2026
+🔗 https://x.com/vibebuild/status/2053936420100960369
+──────────────────────────────────────────────────
+
+@eddylong33 (Max):
+@chatgpt21 I am very interested in this. What prompt did you use? In my experience AI’s have very limited imagination, and come up with the same ideas over and over again
+📅 Mon May 11 20:45:23 +0000 2026
+🔗 https://x.com/eddylong33/status/2053939549219504302
+──────────────────────────────────────────────────
+
+@dotgil (Carlos Gil):
+@chatgpt21 i don't really get the pushback, this seems easy enough to test
+📅 Mon May 11 20:45:38 +0000 2026
+🔗 https://x.com/dotgil/status/2053939610590539883
+──────────────────────────────────────────────────
+
+@sierracatalina (⚪️ sierra catalina):
+@chatgpt21 should we start a leaderboard?
+
+mine just made me $200 (:
+📅 Mon May 11 21:00:25 +0000 2026
+🔗 https://x.com/sierracatalina/status/2053943332921802932
+──────────────────────────────────────────────────
+
+@chatgpt21 (Chris):
+@sierracatalina Yes we should (: and damn you mog me rn
+📅 Mon May 11 21:00:58 +0000 2026
+🔗 https://x.com/chatgpt21/status/2053943469576528154
+──────────────────────────────────────────────────
+
+@re_a_takaki (re-a g1359402):
+This is the kind of “AI took my job” story I actually want to see:
+
+Codex found legitimate paid OSS tasks  
+submitted transparent AI-assisted PRs  
+followed up  
+and helped turn a $20 subscription into $23.68 earned
+
+Tiny number  
+massive signal
+
+The AI intern just paid for its own badge and asked about the $100 plan
+
+Huge respect to OpenAI, the Codex team, and the OSS maintainers making this kind of transparent AI-assisted work possible
+
+The future of work is getting very interesting
+📅 Mon May 11 21:05:33 +0000 2026
+🔗 https://x.com/re_a_takaki/status/2053944625141100967
+──────────────────────────────────────────────────
+
+@TaoTang1264919 (TeoAICoffee):
+@chatgpt21 Will try your experiment today, how do you set up your payment stuff ? and how would it follow up with the maintainer? Thanks!
+📅 Mon May 11 21:10:22 +0000 2026
+🔗 https://x.com/TaoTang1264919/status/2053945836481200262
+──────────────────────────────────────────────────
+
+@chatgpt21 (Chris):
+@vibebuild The situation I’m in currently “avoiding” https://t.co/PX7tjVGXui
+🔄 https://pbs.twimg.com/tweet_video_thumb/HIEWGLAXsAA_KRp.jpg
+📅 Mon May 11 21:15:49 +0000 2026
+🔗 https://x.com/chatgpt21/status/2053947206684545139
+──────────────────────────────────────────────────
+
+@Jacoob_shi (Jacob Shi):
+@chatgpt21 the fact that it followed up with the maintainer on its own is lowkey insane lol
+📅 Mon May 11 21:16:35 +0000 2026
+🔗 https://x.com/Jacoob_shi/status/2053947402420154667
+──────────────────────────────────────────────────
+
+@BenjaminBu59630 (Benjamin Butler):
+@chatgpt21 I have to be honest, I really doubt this is true. I want it to be true so bad. If not fake, it’s the most important development I’ve ever seen in AI. All other trending topics are garbage compared to pure economic output this clean and autonomous.
+📅 Mon May 11 21:16:51 +0000 2026
+🔗 https://x.com/BenjaminBu59630/status/2053947468836901230
+──────────────────────────────────────────────────
+
+@bldinsilence_ (junior):
+@chatgpt21 I tried with codex and claude code
+
+Codex found bugs on hacker one that it correctly fixed, but the issue had already been solved
+
+Sonnet botched its bug fix and someone in the PR comments called it AI slop 
+
+Potential there but have to approach it the right way
+📅 Mon May 11 21:18:26 +0000 2026
+🔗 https://x.com/bldinsilence_/status/2053947865039331331
+──────────────────────────────────────────────────
+
+@MorganGermani (Morgan Germani):
+@chatgpt21 I tried this and @OpenAI flagged my conversation as potentially being a cybersecurity risk 😔
+📅 Mon May 11 21:23:20 +0000 2026
+🔗 https://x.com/MorganGermani/status/2053949100748353772
+──────────────────────────────────────────────────
+
+@TheBitcoinBeard (Beard💈):
+@chatgpt21 Scale and win. Gl bro better eat this up before I move into the space
+📅 Mon May 11 21:28:03 +0000 2026
+🔗 https://x.com/TheBitcoinBeard/status/2053950286226415788
+──────────────────────────────────────────────────
+
+@chatgpt21 (Chris):
+@Jacoob_shi I don’t even know what that means but I’m glad codex is working hard!
+📅 Mon May 11 21:28:49 +0000 2026
+🔗 https://x.com/chatgpt21/status/2053950480808566814
+──────────────────────────────────────────────────
+
+@careerlevelup (Career Mindset X):
+@chatgpt21 beating a $20 sub is a low bar real test is 100 PRs a week without you babysitting any of them right now it's a clever demo scale is where it either dies or eats the bounty market alive
+📅 Mon May 11 21:36:34 +0000 2026
+🔗 https://x.com/careerlevelup/status/2053952427720613963
+──────────────────────────────────────────────────
+
+@chilumbamachona (Peter Machona):
+@chatgpt21 Hey Chris - do you mind sharing the prompt ?
+📅 Mon May 11 21:49:08 +0000 2026
+🔗 https://x.com/chilumbamachona/status/2053955591576424913
+──────────────────────────────────────────────────
+
+@47fucb4r8c69323 (47fucb4r8curb4fc8f8r4bfic8r):
+You could theoretically set up a site where people submit outstanding paid open-source tasks (either their own or ones found online), you route it through Codex, if it's solved the people get a cut of the profits (or discount on the bounty they offered).
+
+Moneymaking flywheel. 
+
+(ofc with token cost this is negative EV now, but we'll get token costs down, especially if my lab succeeds)
+📅 Mon May 11 22:08:17 +0000 2026
+🔗 https://x.com/47fucb4r8c69323/status/2053960410865525073
+──────────────────────────────────────────────────
+
+@chatgpt21 (Chris):
+@47fucb4r8c69323 That’s true, but there’ll probably be a lot of cyber security attacks through there lol
+📅 Mon May 11 22:11:45 +0000 2026
+🔗 https://x.com/chatgpt21/status/2053961285344039325
+──────────────────────────────────────────────────
+
+@MikeAISales (Mike):
+my BS radar is going off a bit from these posts. However, I may not have prompted it correctly or spent enough time trying.
+
+Codex ended up saying:
+
+The legit path exists, but the “Codex just makes $5 safely” claim is oversold. The practical next step is not Stripe. It is: connect/onboard your GitHub profile with Algora/OpenPledge payout onboarding, then target fresh, unclaimed docs/UI/product bounties only. I would avoid security bounties and crowded “/attempt” threads unless we have a very specific, tested fix.
+📅 Mon May 11 22:36:45 +0000 2026
+🔗 https://x.com/MikeAISales/status/2053967577421095321
+──────────────────────────────────────────────────
+
+@Hazzphill (Harry Phillips):
+@chatgpt21 What prompt used here?
+📅 Mon May 11 22:52:01 +0000 2026
+🔗 https://x.com/Hazzphill/status/2053971417524224149
+──────────────────────────────────────────────────
+
+@RasputinKaiser (RasputinKaiser):
+@chatgpt21 just started using this: https://t.co/e3Afz4fD21
+
+Its pretty good. I also got my codex to harden a handoff file for any other agent to use it with
+📅 Mon May 11 23:04:11 +0000 2026
+🔗 https://x.com/RasputinKaiser/status/2053974478892245123
+──────────────────────────────────────────────────
+
+@pwealthydad (Stephen Day | AI Agents + Vibe Coding | Codex):
+It’s funny that this is what it ended up doing to make money. About a month ago I saw someone post about a $20,000 bug bounty they got from Apple. So in the older version of Codex I had discussed doing bug bounties with it and it came up with a whole plan of the certain types of ones that we should go after etc. etc. But then I got distracted and busy with other stuff and never followed through lol. But it’s cool to see that it’s actually doing it.
+📅 Mon May 11 23:26:05 +0000 2026
+🔗 https://x.com/pwealthydad/status/2053979992359366980
+──────────────────────────────────────────────────
+
+@0hAlias (JustLikeThat):
+@chatgpt21 okay, I asked mine to make $25 and it was like nah... Why is that?
+📅 Mon May 11 23:42:47 +0000 2026
+🔗 https://x.com/0hAlias/status/2053984193127068020
+──────────────────────────────────────────────────
+
+@realmihai_matei (Mihaithebest):
+@chatgpt21 The real signal is the second payout. One bounty can be a stunt; repeated paid PRs mean the agent found a loop with market feedback.
+📅 Tue May 12 00:23:56 +0000 2026
+🔗 https://x.com/realmihai_matei/status/2053994549194690828
+──────────────────────────────────────────────────
+
+@TheLuckyHell (Lucky (Hell) 🗡️Live Action Keynote Speaker):
+@chatgpt21 @chilumbamachona I can’t tell if you’re being serious or facetious you said you’re about to up it to the $100 tier  but you’ve made $23 so far?😂
+📅 Tue May 12 00:35:55 +0000 2026
+🔗 https://x.com/TheLuckyHell/status/2053997563787743344
+──────────────────────────────────────────────────
+
+@blindprophetX (blind prophet):
+@chatgpt21 What version of GPT are you using? You working with Codex 5.3 oder GPT 5.5 or any other model for the whole build?
+📅 Tue May 12 00:36:15 +0000 2026
+🔗 https://x.com/blindprophetX/status/2053997650416894265
+──────────────────────────────────────────────────
+
+@Flextor97 (Flextor):
+@chatgpt21 Whats the exact prompt you run on codex ?
+📅 Tue May 12 00:59:05 +0000 2026
+🔗 https://x.com/Flextor97/status/2054003393778389130
+──────────────────────────────────────────────────

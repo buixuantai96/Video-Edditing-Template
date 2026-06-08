@@ -1,0 +1,269 @@
+
+@cursor_ai (Cursor):
+Introducing Composer 2.5, our most powerful model yet.
+
+It's more intelligent, better at sustained work on long-running tasks, and more reliable at following complex instructions.
+
+For the next week, we’re doubling the included usage of the model. https://t.co/N87ojcXlOC
+🖼️ https://pbs.twimg.com/media/HInYLGEbUAMPCxf.png
+📅 Mon May 18 16:43:35 +0000 2026
+🔗 https://x.com/cursor_ai/status/2056415413077233983
+──────────────────────────────────────────────────
+
+@cursor_ai (Cursor):
+Composer 2.5 is exceptionally intelligent and up to 10x more efficient than similarly capable models. https://t.co/ie9X2VPjTU
+🖼️ https://pbs.twimg.com/media/HInYVepaIAAhz0e.jpg
+📅 Mon May 18 16:43:35 +0000 2026
+🔗 https://x.com/cursor_ai/status/2056415414977187904
+──────────────────────────────────────────────────
+
+@cursor_ai (Cursor):
+We improved Composer by scaling training, generating more complex RL environments, and introducing new learning methods.
+
+For example, we use text feedback during RL to learn faster by assigning credit in rollouts spanning hundreds of thousands of tokens.
+📅 Mon May 18 16:43:36 +0000 2026
+🔗 https://x.com/cursor_ai/status/2056415416621420749
+──────────────────────────────────────────────────
+
+@cursor_ai (Cursor):
+Composer 2.5 is built on the same open-source base as Composer 2, Moonshot’s Kimi K2.5. https://t.co/i0zbjf3AY2
+🖼️ https://pbs.twimg.com/media/HInYuauagAAyoG_.png
+📅 Mon May 18 16:43:36 +0000 2026
+🔗 https://x.com/cursor_ai/status/2056415417971986647
+──────────────────────────────────────────────────
+
+@cursor_ai (Cursor):
+Together with SpaceXAI, we’re training a significantly larger model from scratch, using 10x more total compute.
+
+With Colossus 2’s million H100-equivalents and our combined data and training techniques, we expect this to be a major leap in model capability.
+📅 Mon May 18 16:43:37 +0000 2026
+🔗 https://x.com/cursor_ai/status/2056415419536461836
+──────────────────────────────────────────────────
+
+@cursor_ai (Cursor):
+Learn more about Composer 2.5: https://t.co/du1AwrYVNB
+📅 Mon May 18 16:43:37 +0000 2026
+🔗 https://x.com/cursor_ai/status/2056415420614386064
+──────────────────────────────────────────────────
+
+@serglotz (Serg):
+@cursor_ai Why is it not based on kimi 2.6?
+📅 Mon May 18 16:45:11 +0000 2026
+🔗 https://x.com/serglotz/status/2056415816346714323
+──────────────────────────────────────────────────
+
+@bitslix (bitslix):
+@cursor_ai When available in cursor-agent? https://t.co/DhDAxS4DgB
+🖼️ https://pbs.twimg.com/media/HInflVCWQAAdcWx.jpg
+📅 Mon May 18 17:04:11 +0000 2026
+🔗 https://x.com/bitslix/status/2056420597903556764
+──────────────────────────────────────────────────
+
+@JerrySGE (Jerry):
+@cursor_ai @grok what is Composer?
+What does it do?
+📅 Mon May 18 17:11:49 +0000 2026
+🔗 https://x.com/JerrySGE/status/2056422519238779365
+──────────────────────────────────────────────────
+
+@CirclStdios (Michael Sylvester):
+@cursor_ai Is it better prices than back in February?
+📅 Mon May 18 17:20:48 +0000 2026
+🔗 https://x.com/CirclStdios/status/2056424777095795135
+──────────────────────────────────────────────────
+
+@sayoojkeloth (Sayooj):
+@cursor_ai but barely a 0.1% difference from the other model. does that even matter for regular coding tasks?
+📅 Mon May 18 17:23:59 +0000 2026
+🔗 https://x.com/sayoojkeloth/status/2056425579931722141
+──────────────────────────────────────────────────
+
+@johnbuildss (John):
+@cursor_ai Is it a Kimi K2.6 fork? Don’t care whether it is, just curious
+📅 Mon May 18 17:25:17 +0000 2026
+🔗 https://x.com/johnbuildss/status/2056425907519189307
+──────────────────────────────────────────────────
+
+@Himanshu_042 (Himanshu):
+@cursor_ai why people debate codex vs claude while cursor literally lets you use both?
+📅 Mon May 18 17:27:55 +0000 2026
+🔗 https://x.com/Himanshu_042/status/2056426569514848469
+──────────────────────────────────────────────────
+
+@ArsiHoxha_ (Arsi Hoxha):
+@cursor_ai feels like every month the gap between “AI assistant” and “actual collaborator” gets smaller
+📅 Mon May 18 17:28:26 +0000 2026
+🔗 https://x.com/ArsiHoxha_/status/2056426701047939189
+──────────────────────────────────────────────────
+
+@JTFAI_1917 (沈黙LV0):
+@cursor_ai I am looking for an AI coding tool. 
+Which one do you think is the best?
+Can anyone give me some suggestions? https://t.co/2dHMKnQQv5
+🖼️ https://pbs.twimg.com/media/HInqRWraYAA1sW3.jpg
+📅 Mon May 18 17:52:10 +0000 2026
+🔗 https://x.com/JTFAI_1917/status/2056432672088719430
+──────────────────────────────────────────────────
+
+@alik472_ (Ali M):
+@cursor_ai can someone test this and prove that it is not benchmaxxed?
+📅 Mon May 18 18:07:32 +0000 2026
+🔗 https://x.com/alik472_/status/2056436540520419736
+──────────────────────────────────────────────────
+
+@DanielWhit21874 (Daniel):
+@cursor_ai @leerob I’m actually curious if cursor will be able to compete fully with OpenAI and Anthropic at this point
+📅 Mon May 18 18:07:36 +0000 2026
+🔗 https://x.com/DanielWhit21874/status/2056436556055900464
+──────────────────────────────────────────────────
+
+@mast3rkraft (mast3rkraft):
+@cursor_ai but you guys based it on https://t.co/eDjEug6R5U model right?
+📅 Mon May 18 18:13:29 +0000 2026
+🔗 https://x.com/mast3rkraft/status/2056438035433038334
+──────────────────────────────────────────────────
+
+@nkbuilds (Naveed):
+@cursor_ai @grok why does GPT 5.5 out perform on terminal bench 2.0?
+📅 Mon May 18 18:26:56 +0000 2026
+🔗 https://x.com/nkbuilds/status/2056441423944118670
+──────────────────────────────────────────────────
+
+@AndrewK404 (Andrew Kuncevich):
+@cursor_ai First of all, looks like you poached the designers from Anthropic XD
+
+Second, waiting for the Arena results
+📅 Mon May 18 18:28:31 +0000 2026
+🔗 https://x.com/AndrewK404/status/2056441819018277373
+──────────────────────────────────────────────────
+
+@AndrewK404 (Andrew Kuncevich):
+@cursor_ai for real, it feels like I’m reading an Anthropic blog post https://t.co/SjEu4rYBix
+🖼️ https://pbs.twimg.com/media/HInzOA9XkAAPXlr.jpg
+📅 Mon May 18 18:29:52 +0000 2026
+🔗 https://x.com/AndrewK404/status/2056442158526169187
+──────────────────────────────────────────────────
+
+@SahilPanhotra (Sahil Panhotra | Indie Builder | Dev):
+@cursor_ai wondering if its kimi k2.6 with rl this time? https://t.co/HeiosIzHr7
+🖼️ https://pbs.twimg.com/media/HIn0z6ebgAAUorn.jpg
+📅 Mon May 18 18:37:09 +0000 2026
+🔗 https://x.com/SahilPanhotra/status/2056443994067063285
+──────────────────────────────────────────────────
+
+@mbajaj_ (Manoj):
+@cursor_ai Composer 2.5 is within 1.6% of Opus on CursorBench hard tasks. GPT-5.5 leads Terminal-Bench but drops to 59.2% on CursorBench at default settings. "which model is best" is becoming "best at what." the answer changes depending on the benchmark.
+📅 Mon May 18 19:02:57 +0000 2026
+🔗 https://x.com/mbajaj_/status/2056450488003178948
+──────────────────────────────────────────────────
+
+@rozzabuilds (Rozzabuilds):
+@cursor_ai Composer 2.5: worse than opus and GPT-5.5 on every benchmark. https://t.co/CRjDJgD2NE
+🔄 https://pbs.twimg.com/tweet_video_thumb/HIn61ZSW0AAZKvI.jpg
+📅 Mon May 18 19:03:02 +0000 2026
+🔗 https://x.com/rozzabuilds/status/2056450508047446395
+──────────────────────────────────────────────────
+
+@MarianKunde (Marian Kunde):
+@cursor_ai Damn this looks reallyyyy close to the top models. @grok how would tou say this new mdoel stacks up against the other frontier ones ?
+📅 Mon May 18 19:12:16 +0000 2026
+🔗 https://x.com/MarianKunde/status/2056452831280791775
+──────────────────────────────────────────────────
+
+@chipxsd (Klemen Verdnik):
+@cursor_ai Congrats to the @cursor_ai and Colossus team! Can't say how it compares to opus 4.7 in practice yet, but so far pretty happy with it!
+
+For folks that don't wanna get their macbook keyed by lunatics, I'd recommend this extension: https://t.co/wOKkbasDEq
+📅 Mon May 18 19:21:48 +0000 2026
+🔗 https://x.com/chipxsd/status/2056455229466620414
+──────────────────────────────────────────────────
+
+@rpitg3 (Arpit Garg):
+@cursor_ai @cursor_ai 
+
+I am getting this error when trying to use Composer 2.5
+
+I have api keys for other models but why is it affecting using Composer models? https://t.co/GdBMnCECl8
+🖼️ https://pbs.twimg.com/media/HIoPE6jXAAEg8xR.jpg
+📅 Mon May 18 20:31:41 +0000 2026
+🔗 https://x.com/rpitg3/status/2056472815331631154
+──────────────────────────────────────────────────
+
+@LeoDuquesnel (Léo Duquesnel):
+@cursor_ai That's great but the 200k context window is still kind of a blocker for me :/ https://t.co/RoToqnuQfp
+🖼️ https://pbs.twimg.com/media/HIocaQGbQAA_FjT.png
+📅 Mon May 18 21:30:14 +0000 2026
+🔗 https://x.com/LeoDuquesnel/status/2056487549569503551
+──────────────────────────────────────────────────
+
+@eaglebuildz (veridicus (e/acc, limitless)):
+@cursor_ai which benchmark is that?
+why can't I see these kind of comparisons at llm leaderboards like llmarena or livebench?
+📅 Mon May 18 21:47:58 +0000 2026
+🔗 https://x.com/eaglebuildz/status/2056492013738963142
+──────────────────────────────────────────────────
+
+@PianzhouC (Bianca_boat):
+The fact that Composer 2.5 is built on Kimi K2.5 (open source) and beats most proprietary models is the real story here.
+
+Cursor's moat was never the base model — it's the RL training pipeline + developer workflow data. Now they're proving that with enough fine-tuning, open-source bases can compete with frontier models on specific tasks.
+
+This is the playbook for every AI vertical: open base + domain-specific RL = proprietary-level performance at a fraction of the cost.
+📅 Mon May 18 22:18:55 +0000 2026
+🔗 https://x.com/PianzhouC/status/2056499804080074761
+──────────────────────────────────────────────────
+
+@Ixthos (Danny R):
+@cursor_ai Cursor just dropped Composer 2.5 — basically gave their AI espresso and told it to stop ghosting complex tasks. Next up: Elon-powered beast mode. Buckle up, devs. Grok
+📅 Mon May 18 22:43:43 +0000 2026
+🔗 https://x.com/Ixthos/status/2056506045640409224
+──────────────────────────────────────────────────
+
+@sanchitcodes (Sanchit):
+@cursor_ai man i wish u all give api access as well for third party tools. i would love to give it a shot and probably make it my daily driver inside of kiloclawq butttt..
+📅 Mon May 18 23:00:46 +0000 2026
+🔗 https://x.com/sanchitcodes/status/2056510336229061111
+──────────────────────────────────────────────────
+
+@MikeHapner (Mike Hapner):
+@cursor_ai And now it just randomly threw a Chinese character into my chat - no joke. Not cool. https://t.co/QpgvJqpPkQ
+🖼️ https://pbs.twimg.com/media/HIoyKsNWwAANI0Z.png
+📅 Mon May 18 23:05:11 +0000 2026
+🔗 https://x.com/MikeHapner/status/2056511446754746789
+──────────────────────────────────────────────────
+
+@MetaEraHK (ME Group):
+@cursor_ai 🫡
+https://t.co/HTf79jns2V
+┌─ QT @MetaEraHK:
+│ 🚀 Cursor Launches Composer 2.5
+│ 
+│ @cursor_ai introduced Composer 2.5, calling it its most powerful model yet.
+│ 
+└─ https://x.com/MetaEraHK/status/2056554432524124662
+📅 Tue May 19 01:56:17 +0000 2026
+🔗 https://x.com/MetaEraHK/status/2056554503340704116
+──────────────────────────────────────────────────
+
+@yash_yk45 (Yash):
+@cursor_ai This is what we expected from cursor
+
+https://t.co/oLbdrbUgjh
+┌─ QT @yash_yk45:
+│ This can be game changing. Cost is way less than opus with sub par performance
+└─ https://x.com/yash_yk45/status/2056588860658999365
+📅 Tue May 19 04:13:28 +0000 2026
+🔗 https://x.com/yash_yk45/status/2056589026342342714
+──────────────────────────────────────────────────
+
+@Kushagrat15 (Kushagra Tiwari):
+@cursor_ai every AI code editor dropping a new model every 2 weeks now. at this point just name them after weekdays
+📅 Tue May 19 04:13:46 +0000 2026
+🔗 https://x.com/Kushagrat15/status/2056589103672746195
+──────────────────────────────────────────────────
+
+@IamPranavJ (Pranav):
+@cursor_ai they trained their own model instead of paying for inference. every serious AI product will be doing this in 12 months. third-party APIs constrain latency, cost, and behavior control too much for real production work.
+📅 Tue May 19 07:27:52 +0000 2026
+🔗 https://x.com/IamPranavJ/status/2056637952353350069
+──────────────────────────────────────────────────

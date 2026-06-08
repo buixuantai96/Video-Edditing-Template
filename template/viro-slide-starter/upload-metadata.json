@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "youtube": {
+    "title": "TODO title dưới 100 ký tự",
+    "description": "🎬 TODO đoạn 1.\n\n🔎 TODO đoạn 2.\n\nNguồn: TODO\n\n#Viro #TODO",
+    "privacyStatus": "private",
+    "tags": [
+      "Viro",
+      "TODO"
+    ]
+  },
+  "facebook": {
+    "caption": "🎬 TODO đoạn 1.\n\n🔎 TODO đoạn 2.\n\n#Viro #TODO",
+    "videoState": "DRAFT",
+    "sourceComment": "Nguồn: TODO"
+  }
+}

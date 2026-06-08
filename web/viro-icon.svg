@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Viro">
+  <defs>
+    <linearGradient id="bg" x1="80" y1="40" x2="432" y2="472" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#07111f"/>
+      <stop offset="1" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="v" x1="116" y1="126" x2="382" y2="388" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2dd4bf"/>
+      <stop offset=".52" stop-color="#22c55e"/>
+      <stop offset="1" stop-color="#f2b261"/>
+    </linearGradient>
+    <linearGradient id="play" x1="236" y1="174" x2="374" y2="340" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#fff3d9"/>
+    </linearGradient>
+    <filter id="glow" x="-32" y="-32" width="576" height="576" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.13 0 0 0 0 0.77 0 0 0 0 0.55 0 0 0 .42 0"/>
+      <feBlend in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect x="32" y="32" width="448" height="448" rx="104" fill="url(#bg)"/>
+  <path d="M92 106h84l80 202 80-202h84L286 406h-60L92 106Z" fill="url(#v)" filter="url(#glow)"/>
+  <path d="M232 168c0-16 18-25 31-16l121 83c15 10 15 32 0 42l-121 83c-13 9-31 0-31-16V168Z" fill="url(#play)"/>
+  <path d="M116 128h44l96 242 96-242h44" fill="none" stroke="#ffffff" stroke-opacity=".2" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M80 400h352" stroke="#f2b261" stroke-opacity=".28" stroke-width="10" stroke-linecap="round"/>
+</svg>

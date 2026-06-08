@@ -1,0 +1,7 @@
+OpenClaw vừa ra bản 2026.5.2 — tích hợp Grok 4.3, plugin ổn định hơn, gateway nhanh hơn.
+Điểm đáng chú ý nhất là plugin system chuyển sang npm-first. Cài plugin giờ đi qua npm trước thay vì ClawHub. Và Grok 4.3 chính thức trở thành model mặc định của xAI.
+Về tốc độ thì đáng nể. Gateway khởi động nhanh hơn nhờ lazy load plugin. Prompt dispatch bớt CPU vì cache system prompt. Và session store không còn block request khi dữ liệu lớn.
+Bốn cải tiến lõi nằm ở đây. Plugin npm-first. Gateway restart force. Tool descriptor cache. Và path guard tối ưu cho filesystem.
+Nhưng đổi lớn thì luôn có rủi ro. Plugin cũ có thể mất metadata. Config stale sẽ bị doctor repair. Còn npm-first là tương lai nhưng ClawHub vẫn fallback được.
+Hơn ba mươi kênh nhắn tin được sửa lỗi. Discord giữ button qua restart. Telegram và Slack stream ổn hơn. WhatsApp đóng zombie socket.
+Chốt lại: OpenClaw 2026.5.2 không phải bản vá nhỏ, nó là cuộc đại tu toàn diện cho hệ sinh thái plugin và channel. Follow viro để cập nhật tech mới nhất.

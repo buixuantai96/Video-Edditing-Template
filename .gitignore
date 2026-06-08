@@ -1,0 +1,82 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+.venv/
+.venv.broken-*/
+venv/
+ENV/
+
+# OS specific
+.DS_Store
+.DS_Store?
+**/.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Project specific
+.env
+.openclaw/
+.devin/config.local.json
+config/social-upload.json
+config/tts.json
+config/connections.json
+*.log
+
+# Slide project dynamic data
+slide/*/output/
+slide/*/input_audio/
+slide/*/preview-assets/
+slide/*/*.mp3
+slide/*/*.mp4
+slide/*/*.wav
+slide/*/*.webm
+slide/*/source/*.html
+slide/*/source/article.txt
+slide/*/source/paper.txt
+slide/*/source/neuronpedia.txt
+slide/*/source/*-contact.jpg
+slide/*/source/*.mp4
+slide/*/source/*.webm
+slide/*/source/*.mov
+slide/*/source/*.m4v
+slide/*/source/*.mp3
+slide/*/source/*.wav
+slide/*/source/*.m4a
+slide/*/source/*.aac
+slide/*/source/*.ogg
+
+# Template project dynamic data
+template/*/output/
+template/*/input_audio/
+template/*/preview-assets/
+template/*/*.mp3
+template/*/*.mp4
+template/*/*.wav
+template/*/*.webm
+
+# Exception: keep the slide directory structure
+!slide/**/.gitkeep

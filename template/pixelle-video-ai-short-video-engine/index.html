@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pixelle-Video – AI Fully Automated Short Video Engine</title>
+  <meta name="description" content="Pixelle-Video: repo AI tự động tạo short video từ topic, gồm script, AI image/video, TTS, BGM, ComfyUI workflow và render." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css?v=preview-editor-slide-tools-sync-20260517" />
+</head>
+<body>
+  <div class="main-wrapper">
+    <div class="script-panel" id="scriptPanel"><div class="script-panel-title"><i class="fa-solid fa-scroll"></i> Script</div><div class="script-panel-badge" id="scriptSlideBadge">Ready</div><div class="script-panel-text" id="scriptText">Bấm vào slide để bắt đầu...</div></div>
+    <div class="audio-panel" id="audioPanel"><div class="audio-panel-title"><i class="fa-solid fa-sliders"></i> Âm Thanh</div><div class="audio-group"><label class="audio-label"><i class="fa-solid fa-music"></i> Nhạc nền</label><select id="bgmSelect" onchange="switchBGM(this.value)"><option value="ambient" selected>Ambient</option><option value="cinematic">Cinematic</option><option value="lofi">Lo-fi</option><option value="piano">Piano</option><option value="dark">Dark</option><option value="custom">Custom upload</option><option value="none">Tắt</option></select></div><div class="audio-panel-divider"></div><div class="audio-slide-header"><span class="audio-slide-badge" id="audioPanelSlide">Ready</span><div class="audio-slide-nav"><button class="audio-nav-btn" onclick="audioPanelPrev()"><i class="fa-solid fa-chevron-left"></i></button><button class="audio-nav-btn" onclick="audioPanelNext()"><i class="fa-solid fa-chevron-right"></i></button></div></div><div class="audio-group"><label class="audio-label"><i class="fa-solid fa-forward"></i> Chuyển slide</label><select id="transitionSelect" onchange="setSlideTransition(currentSlide, this.value)"><option value="gong">Gong</option><option value="rise">Rise</option><option value="bass">Bass</option><option value="chime">Chime</option><option value="sweep">Sweep</option><option value="boom">Boom</option><option value="alarm">Alarm</option><option value="chord">Chord</option><option value="ascending">Ascending</option><option value="retro">Retro</option><option value="minimal">Minimal</option><option value="dramatic">Dramatic</option></select></div><div class="audio-group"><label class="audio-label"><i class="fa-solid fa-wand-magic-sparkles"></i> Hiện element</label><select id="revealSelect" onchange="setSlideReveal(currentSlide, this.value)"><option value="ping">Ping</option><option value="pop">Pop</option><option value="chime">Chime</option><option value="click">Click</option><option value="bubble">Bubble</option><option value="woosh">Woosh</option><option value="snap">Snap</option><option value="sparkle">Sparkle</option><option value="blip">Blip</option><option value="tick">Tick</option><option value="bell">Bell</option></select></div><div class="audio-actions"><button onclick="testTransition()">Test slide</button><button onclick="testReveal()">Test reveal</button></div></div>
+
+    <div id="slideContainer" class="slide-container">
+      <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+      <div class="brand-top-left"><span>@viro</span></div>
+      <div class="brand-bottom-right"><span>@viro</span></div>
+
+      <div class="slide active" data-slide="0">
+        <div class="slide-bg slide-bg-1"></div><canvas class="fx-canvas" data-fx="scan"></canvas>
+        <div class="slide-content hero-content pixelle-hero-content">
+          <div class="slide-element fade-up">
+            <div class="pixelle-hero-orbit">
+              <div class="orbit-ring ring-a"></div><div class="orbit-ring ring-b"></div>
+              <div class="pixelle-core"><i class="fa-solid fa-clapperboard"></i><span>AI</span></div>
+              <span class="orbit-chip pv-chip-script">Script</span><span class="orbit-chip pv-chip-media">Media</span><span class="orbit-chip pv-chip-voice">Voice</span><span class="orbit-chip pv-chip-render">Render</span>
+            </div>
+            <h1 class="title-main title-shimmer title-glitch"><span class="gradient-text hero-version-text">Pixelle-Video</span></h1>
+            <p class="hero-caption">Một topic → cả video ngắn<br/>Script, visual, voice, BGM, render</p>
+            <div class="repo-stats"><span><i class="fa-solid fa-star"></i> 12.9k stars</span><span>Python</span><span>Apache-2.0</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide" data-slide="1">
+        <div class="slide-bg slide-bg-2"></div><canvas class="fx-canvas" data-fx="scan"></canvas>
+        <div class="slide-content pixelle-slide-content">
+          <div class="slide-element fade-up">
+            <h2 class="slide-title">Một Web UI<br/><span class="gradient-text">Cả Xưởng Content</span></h2>
+            <div class="webui-frame"><img src="webui_en.png" alt="Pixelle-Video Web UI" /></div>
+          </div>
+          <div class="slide-element scale-in">
+            <div class="factory-card script-machine"><i class="fa-solid fa-pen-nib"></i><strong>AI copywriter</strong><span>Từ topic thành lời dẫn có cấu trúc.</span></div>
+          </div>
+          <div class="slide-element scale-in">
+            <div class="factory-card media-machine"><i class="fa-solid fa-wand-magic-sparkles"></i><strong>AI media planner</strong><span>Mỗi câu gắn với ảnh hoặc video AI.</span></div>
+          </div>
+          <div class="slide-element scale-in">
+            <div class="factory-card render-machine"><i class="fa-solid fa-microphone-lines"></i><strong>Voice + BGM + render</strong><span>Ghép giọng đọc, nhạc nền và xuất file.</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide" data-slide="2">
+        <div class="slide-bg slide-bg-3"></div><canvas class="fx-canvas" data-fx="scan"></canvas>
+        <div class="slide-content pixelle-slide-content pipeline-content">
+          <div class="slide-element fade-up">
+            <div class="pipeline-title-card"><i class="fa-solid fa-route"></i><h2 class="slide-title">Pipeline<br/><span class="gradient-text-2">Topic Thành Timeline</span></h2><div class="pipeline-ghost"><img src="flow_en.png" alt="Pixelle-Video flow" /></div></div>
+          </div>
+          <div class="slide-element scale-in"><div class="pipeline-step step-one"><span>01</span><strong>Script Generation</strong><small>LLM viết nội dung</small></div></div>
+          <div class="slide-element scale-in"><div class="pipeline-step step-two"><span>02</span><strong>Image Planning</strong><small>Chia cảnh, đặt prompt</small></div></div>
+          <div class="slide-element scale-in"><div class="pipeline-step step-three"><span>03</span><strong>Frame Processing</strong><small>ComfyUI workflow xử lý</small></div></div>
+          <div class="slide-element scale-in"><div class="pipeline-step step-four"><span>04</span><strong>Video Composition</strong><small>Ghép visual, voice, BGM</small></div></div>
+        </div>
+      </div>
+
+      <div class="slide" data-slide="3" data-mode="highlight">
+        <div class="slide-bg slide-bg-4"></div><canvas class="fx-canvas" data-fx="scan"></canvas>
+        <div class="slide-content pixelle-slide-content">
+          <div class="slide-element fade-up">
+            <div class="icon-badge icon-badge-large icon-badge-accent"><i class="fa-solid fa-cubes"></i></div>
+            <h2 class="slide-title">Sức Mạnh<br/><span class="gradient-text">Nằm Ở Modular</span></h2>
+            <div class="pixelle-module-grid">
+              <div class="core-module pixelle-module highlightable"><div class="module-icon"><div class="module-ring"></div><i class="fa-solid fa-computer"></i></div><div class="module-info"><span>Self-host</span><p>ComfyUI local nếu có GPU</p></div></div>
+              <div class="core-module pixelle-module highlightable"><div class="module-icon"><div class="module-ring"></div><i class="fa-solid fa-cloud-arrow-up"></i></div><div class="module-info"><span>RunningHub</span><p>Đẩy tác vụ nặng lên cloud</p></div></div>
+              <div class="core-module pixelle-module highlightable"><div class="module-icon"><div class="module-ring"></div><i class="fa-solid fa-volume-high"></i></div><div class="module-info"><span>TTS</span><p>Edge-TTS, Index-TTS, đa ngôn ngữ</p></div></div>
+              <div class="core-module pixelle-module highlightable"><div class="module-icon"><div class="module-ring"></div><i class="fa-solid fa-table-cells-large"></i></div><div class="module-info"><span>Templates</span><p>Dọc, ngang, vuông cho nhiều kênh</p></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide" data-slide="4">
+        <div class="slide-bg slide-bg-5"></div><canvas class="fx-canvas" data-fx="scan"></canvas>
+        <div class="slide-content pixelle-slide-content updates-content">
+          <div class="slide-element fade-up">
+            <div class="icon-badge icon-badge-large icon-badge-info"><i class="fa-solid fa-film"></i></div>
+            <h2 class="slide-title">Từ Generator<br/><span class="gradient-text">Thành Studio Nhỏ</span></h2>
+          </div>
+          <div class="slide-element scale-in"><div class="update-card hot-update"><span>01</span><strong>Digital human + I2V + motion transfer</strong><small>Những format AI video đang hot.</small></div></div>
+          <div class="slide-element scale-in"><div class="update-card custom-update"><span>02</span><strong>Custom media</strong><small>Upload ảnh/video riêng để AI phân tích.</small></div></div>
+          <div class="slide-element scale-in"><div class="update-card release-update"><span>v0.1.15</span><strong>LLM model auto-load</strong><small>Test API ngay trong Web UI.</small></div></div>
+        </div>
+      </div>
+
+      <div class="slide" data-slide="5">
+        <div class="slide-bg slide-bg-7"></div><canvas class="fx-canvas" data-fx="scan"></canvas>
+        <div class="slide-content pixelle-slide-content conclusion-content">
+          <div class="slide-element fade-up">
+            <div class="icon-badge icon-badge-large icon-badge-success"><i class="fa-solid fa-check-double"></i></div>
+            <h2 class="slide-title">Chốt Lại</h2>
+            <div class="conclusion-box pixelle-conclusion"><p class="conclusion-text"><strong class="gradient-text">Pixelle-Video</strong> = short video AI có kiểm soát</p><div class="divider"></div><p class="conclusion-sub">Mạnh nhất khi bạn tự chọn model, workflow và template.</p></div>
+          </div>
+          <div class="slide-element fade-up" data-delay="1000">
+            <div class="source-tag"><i class="fa-solid fa-triangle-exclamation"></i> Cần API key, ffmpeg và backend ComfyUI hoặc RunningHub đủ khỏe.</div>
+            <div class="source-tag follow-tag"><i class="fa-solid fa-bell"></i> Follow Viro để bóc tiếp repo AI đáng thử.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-controls">
+      <button class="side-btn" id="muteBtn" onclick="toggleMute()"><i class="fa-solid fa-volume-high"></i></button>
+      <div class="side-divider"></div>
+      <button class="side-btn" id="prevBtn" onclick="prevSlide()"><i class="fa-solid fa-chevron-up"></i></button>
+      <div class="side-counter"><span id="currentSlide">1</span>/<span id="totalSlides">6</span></div>
+      <button class="side-btn" id="nextBtn" onclick="nextSlide()"><i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+  </div>
+  <script src="app.js?v=preview-editor-slide-tools-sync-20260517"></script>
+</body>
+</html>

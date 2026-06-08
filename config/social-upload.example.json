@@ -1,0 +1,20 @@
+{
+  "youtube": {
+    "client_id": "YOUR_GOOGLE_OAUTH_CLIENT_ID",
+    "client_secret": "YOUR_GOOGLE_OAUTH_CLIENT_SECRET",
+    "redirect_uri": "http://localhost:8765/api/social/youtube/callback",
+    "active_channel_id": "",
+    "channels": []
+  },
+  "facebook": {
+    "graph_version": "v25.0",
+    "active_page_id": "YOUR_FACEBOOK_PAGE_ID",
+    "video_state": "DRAFT",
+    "pages": [
+      {
+        "id": "YOUR_FACEBOOK_PAGE_ID",
+        "page_access_token": "YOUR_FACEBOOK_PAGE_ACCESS_TOKEN"
+      }
+    ]
+  }
+}

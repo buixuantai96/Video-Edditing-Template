@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Codex Được Trả Tiền Lần Hai</title>
+  <meta name="description" content="Phần hai của câu chuyện Codex kiếm tiền: payout thứ hai, XHigh, arbitrage và thị trường việc vi mô cho agent." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css?v=preview-editor-visuals-20260509-scan-safe" />
+</head>
+<body>
+  <div class="main-wrapper">
+    <div class="script-panel" id="scriptPanel"><div class="script-panel-title"><i class="fa-solid fa-scroll"></i> Script</div><div class="script-panel-badge" id="scriptSlideBadge">Ready</div><div class="script-panel-text" id="scriptText">Bấm vào slide để bắt đầu...</div></div>
+    <div class="audio-panel" id="audioPanel"><div class="audio-panel-title"><i class="fa-solid fa-sliders"></i> Âm Thanh</div><div class="audio-group"><label class="audio-label"><i class="fa-solid fa-music"></i> Nhạc nền</label><select id="bgmSelect" onchange="switchBGM(this.value)"><option value="ambient" selected>Ambient</option><option value="cinematic">Cinematic</option><option value="lofi">Lo-fi</option><option value="piano">Piano</option><option value="dark">Dark</option><option value="custom">Custom upload</option><option value="none">Tắt</option></select></div><div class="audio-panel-divider"></div><div class="audio-slide-header"><span class="audio-slide-badge" id="audioPanelSlide">Ready</span><div class="audio-slide-nav"><button class="audio-nav-btn" onclick="audioPanelPrev()"><i class="fa-solid fa-chevron-left"></i></button><button class="audio-nav-btn" onclick="audioPanelNext()"><i class="fa-solid fa-chevron-right"></i></button></div></div><div class="audio-group"><label class="audio-label"><i class="fa-solid fa-forward"></i> Chuyển slide</label><select id="transitionSelect" onchange="setSlideTransition(currentSlide, this.value)"><option value="gong">Gong</option><option value="rise">Rise</option><option value="bass">Bass</option><option value="chime">Chime</option><option value="sweep">Sweep</option><option value="boom">Boom</option><option value="alarm">Alarm</option><option value="chord">Chord</option><option value="ascending">Ascending</option><option value="retro">Retro</option><option value="minimal">Minimal</option><option value="dramatic">Dramatic</option></select></div><div class="audio-group"><label class="audio-label"><i class="fa-solid fa-wand-magic-sparkles"></i> Hiện element</label><select id="revealSelect" onchange="setSlideReveal(currentSlide, this.value)"><option value="ping">Ping</option><option value="pop">Pop</option><option value="chime">Chime</option><option value="click">Click</option><option value="bubble">Bubble</option><option value="woosh">Woosh</option><option value="snap">Snap</option><option value="sparkle">Sparkle</option><option value="blip">Blip</option><option value="tick">Tick</option><option value="bell">Bell</option></select></div><div class="audio-actions"><button onclick="testTransition()">Test slide</button><button onclick="testReveal()">Test reveal</button></div></div>
+
+    <div id="slideContainer" class="slide-container">
+      <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+      <div class="brand-top-left"><span>@viro</span></div>
+      <div class="brand-bottom-right"><span>@viro</span></div>
+
+      <div class="slide active" data-slide="0">
+        <div class="slide-bg slide-bg-1"></div><canvas class="fx-canvas" data-fx="scan"></canvas>
+        <div class="slide-content sequel-content sequel-hero-content">
+          <div class="slide-element fade-up">
+            <div class="source-pill"><i class="fa-brands fa-x-twitter"></i> @chatgpt21 · phần 2</div>
+            <div class="second-payment-stage">
+              <div class="payment-glow"></div>
+              <div class="payment-frame sequel-payment-frame"><img src="source/payment-second.png" alt="Ảnh payout 6 đô 80 từ OpenPledge" /></div>
+              <div class="payout-badge"><span>Payout #2</span><strong>+6,80 đô</strong></div>
+            </div>
+            <h1 class="title-main title-shimmer"><span class="gradient-text">Codex Được Trả Lần Hai</span></h1>
+            <p class="hero-caption">không còn là<br/>một lần may mắn?</p>
+            <div class="x-attribution"><i class="fa-brands fa-x-twitter"></i> Nguồn X: @chatgpt21</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide" data-slide="1">
+        <div class="slide-bg slide-bg-2"></div><canvas class="fx-canvas" data-fx="scan"></canvas>
+        <div class="slide-content sequel-content tweet-proof-content tweet-proof-full">
+          <div class="slide-element fade-up tweet-proof-element">
+            <div class="tweet-shot-frame tweet-shot-frame-full"><img src="source/tweet-screenshot.png" alt="Ảnh chụp tweet Codex got me paid again" /></div>
+            <div class="x-attribution tweet-proof-attribution"><i class="fa-brands fa-x-twitter"></i> Nguồn X: @chatgpt21</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide" data-slide="2">
+        <div class="slide-bg slide-bg-3"></div><canvas class="fx-canvas" data-fx="scan"></canvas>
+        <div class="slide-content sequel-content xhigh-content">
+          <div class="slide-element fade-up">
+            <h2 class="slide-title">Reply đáng chú ý<br/><span class="gradient-text-2">reasoning level?</span></h2>
+            <div class="xhigh-chip"><span>Chris trả lời</span><strong>XHigh</strong></div>
+          </div>
+          <div class="slide-element scale-in"><div class="engine-card"><i class="fa-solid fa-brain"></i><strong>Không phải model rẻ</strong><span>Đây là mức suy luận cao, chạy lâu và tốn quota.</span></div></div>
+          <div class="slide-element scale-in"><div class="agent-path"><span>tìm task</span><i class="fa-solid fa-arrow-right"></i><span>làm PR</span><i class="fa-solid fa-arrow-right"></i><span>follow up</span><i class="fa-solid fa-arrow-right"></i><span>payout</span></div></div>
+        </div>
+      </div>
+
+      <div class="slide" data-slide="3">
+        <div class="slide-bg slide-bg-4"></div><canvas class="fx-canvas" data-fx="scan"></canvas>
+        <div class="slide-content sequel-content signal-content">
+          <div class="slide-element fade-up">
+            <h2 class="slide-title">Tín hiệu thật<br/><span class="gradient-text">là lần thứ hai</span></h2>
+            <div class="signal-axis"><span>stunt?</span><div></div><span>market loop</span></div>
+          </div>
+          <div class="slide-element scale-in"><div class="signal-card muted"><i class="fa-solid fa-dice-one"></i><strong>Một bounty</strong><span>Có thể là may mắn, stunt, hoặc đúng thời điểm.</span></div></div>
+          <div class="slide-element scale-in"><div class="signal-card paid"><i class="fa-solid fa-repeat"></i><strong>Payout thứ hai</strong><span>Cho thấy cùng một mẻ việc bắt đầu có phản hồi thật.</span></div></div>
+          <div class="slide-element scale-in"><div class="signal-card loop"><i class="fa-solid fa-chart-line"></i><strong>Loop kinh tế</strong><span>Tìm việc → làm việc → nộp bằng chứng → nhận tiền.</span></div></div>
+        </div>
+      </div>
+
+      <div class="slide" data-slide="4">
+        <div class="slide-bg slide-bg-5"></div><canvas class="fx-canvas" data-fx="scan"></canvas>
+        <div class="slide-content sequel-content caveat-content">
+          <div class="slide-element fade-up">
+            <h2 class="slide-title">Replies cũng kéo phanh<br/><span class="gradient-text-2">đừng hype quá</span></h2>
+            <div class="risk-radar"><div class="radar-sweep"></div><i class="fa-solid fa-triangle-exclamation"></i></div>
+          </div>
+          <div class="slide-element scale-in"><div class="caveat-card"><i class="fa-solid fa-scale-unbalanced-flip"></i><strong>Arbitrage</strong><span>Nhiều người cùng săn bounty nhỏ thì phần dễ biến mất.</span></div></div>
+          <div class="slide-element scale-in"><div class="caveat-card"><i class="fa-solid fa-bug-slash"></i><strong>Bug đã bị fix</strong><span>Có người thử thấy Codex sửa đúng, nhưng đến muộn.</span></div></div>
+          <div class="slide-element scale-in"><div class="caveat-card danger"><i class="fa-solid fa-trash-can"></i><strong>AI slop</strong><span>PR kém chất lượng sẽ bị maintainer từ chối rất nhanh.</span></div></div>
+        </div>
+      </div>
+
+      <div class="slide" data-slide="5">
+        <div class="slide-bg slide-bg-7"></div><canvas class="fx-canvas" data-fx="scan"></canvas>
+        <div class="slide-content sequel-content conclusion-content sequel-conclusion-content">
+          <div class="slide-element fade-up">
+            <h2 class="slide-title">Không phải công thức<br/><span class="gradient-text">làm giàu</span></h2>
+            <div class="micro-work sequel-micro-work"><span>chọn bounty</span><span>kiểm chứng</span><span>PR sạch</span><span>follow up</span><span>nhận tiền</span></div>
+          </div>
+          <div class="slide-element scale-in"><div class="final-card"><i class="fa-solid fa-diagram-project"></i><strong>Workflow mới</strong><span>Agent bắt đầu tham gia thị trường việc vi mô.</span></div></div>
+          <div class="slide-element fade-up"><div class="conclusion-box codex-conclusion"><p class="conclusion-text"><strong class="gradient-text">Người thắng:</strong> không phải người prompt bừa.</p><div class="divider"></div><p class="conclusion-sub">Mà là người thiết kế workflow đủ sạch, đủ nhanh và đủ đáng tin để con người chấp nhận.</p></div><div class="source-tag follow-tag"><i class="fa-solid fa-bell"></i> Theo dõi Viro để bóc tiếp các workflow AI agent đáng chú ý.</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-controls">
+      <button class="side-btn" id="muteBtn" onclick="toggleMute()"><i class="fa-solid fa-volume-high"></i></button>
+      <div class="side-divider"></div>
+      <button class="side-btn" id="prevBtn" onclick="prevSlide()"><i class="fa-solid fa-chevron-up"></i></button>
+      <div class="side-counter"><span id="currentSlide">1</span>/<span id="totalSlides">6</span></div>
+      <button class="side-btn" id="nextBtn" onclick="nextSlide()"><i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+  </div>
+  <script src="app.js?v=preview-editor-visuals-20260509-scan-safe-custom-preset"></script>
+</body>
+</html>

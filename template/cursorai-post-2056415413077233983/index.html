@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cursor Composer 2.5 - Sát Opus và GPT-5.5 nhưng rẻ hơn nhiều lần</title>
+  <meta name="description" content="Cursor Composer 2.5: benchmark bám sát Opus 4.7 và GPT-5.5, cost per task rẻ hơn nhiều, 85% compute đến từ training và reinforcement learning." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css?v=preview-editor-slide-tools-sync-20260517" />
+</head>
+<body>
+  <div class="main-wrapper">
+    <div class="script-panel" id="scriptPanel"><div class="script-panel-title"><i class="fa-solid fa-scroll"></i> Script</div><div class="script-panel-badge" id="scriptSlideBadge">Ready</div><div class="script-panel-text" id="scriptText">Bấm vào slide để bắt đầu...</div></div>
+    <div class="audio-panel" id="audioPanel"><div class="audio-panel-title"><i class="fa-solid fa-sliders"></i> Âm Thanh</div><div class="audio-group"><label class="audio-label"><i class="fa-solid fa-music"></i> Nhạc nền</label><select id="bgmSelect" onchange="switchBGM(this.value)"><option value="ambient" selected>Ambient</option><option value="cinematic">Cinematic</option><option value="lofi">Lo-fi</option><option value="piano">Piano</option><option value="dark">Dark</option><option value="custom">Custom upload</option><option value="none">Tắt</option></select></div><div class="audio-panel-divider"></div><div class="audio-slide-header"><span class="audio-slide-badge" id="audioPanelSlide">Ready</span><div class="audio-slide-nav"><button class="audio-nav-btn" onclick="audioPanelPrev()"><i class="fa-solid fa-chevron-left"></i></button><button class="audio-nav-btn" onclick="audioPanelNext()"><i class="fa-solid fa-chevron-right"></i></button></div></div><div class="audio-group"><label class="audio-label"><i class="fa-solid fa-forward"></i> Chuyển slide</label><select id="transitionSelect" onchange="setSlideTransition(currentSlide, this.value)"><option value="gong">Gong</option><option value="rise">Rise</option><option value="bass">Bass</option><option value="chime">Chime</option><option value="sweep">Sweep</option><option value="boom">Boom</option><option value="alarm">Alarm</option><option value="chord">Chord</option><option value="ascending">Ascending</option><option value="retro">Retro</option><option value="minimal">Minimal</option><option value="dramatic">Dramatic</option></select></div><div class="audio-group"><label class="audio-label"><i class="fa-solid fa-wand-magic-sparkles"></i> Hiện element</label><select id="revealSelect" onchange="setSlideReveal(currentSlide, this.value)"><option value="ping">Ping</option><option value="pop">Pop</option><option value="chime">Chime</option><option value="click">Click</option><option value="bubble">Bubble</option><option value="woosh">Woosh</option><option value="snap">Snap</option><option value="sparkle">Sparkle</option><option value="blip">Blip</option><option value="tick">Tick</option><option value="bell">Bell</option></select></div><div class="audio-actions"><button onclick="testTransition()">Test slide</button><button onclick="testReveal()">Test reveal</button></div></div>
+
+    <div id="slideContainer" class="slide-container">
+      <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+      <div class="brand-top-left"><span>@viro</span></div>
+      <div class="brand-bottom-right"><span>@viro</span></div>
+
+      <div class="slide active" data-slide="0">
+        <div class="slide-bg slide-bg-1"></div><canvas class="fx-canvas" data-fx="scan"></canvas>
+        <div class="slide-content hero-content pixelle-hero-content cursor-pixelle-hero">
+          <div class="slide-element fade-up">
+            <div class="pixelle-hero-orbit cursor-pixelle-orbit">
+              <div class="orbit-ring ring-a"></div><div class="orbit-ring ring-b"></div>
+              <div class="pixelle-core cursor-pixelle-core"><img src="image.png" alt="Composer 2.5 logo" class="cursor-logo-image" /></div>
+              <span class="orbit-chip pv-chip-script">Bench</span><span class="orbit-chip pv-chip-media">Cost</span><span class="orbit-chip pv-chip-voice">RL</span><span class="orbit-chip pv-chip-render">Moat</span>
+            </div>
+            <h1 class="title-main title-shimmer title-glitch"><span class="gradient-text hero-version-text">Composer 2.5</span></h1>
+            <p class="hero-caption">Sát nhóm đầu ở hard task<br/>và rẻ hơn tới 10 lần</p>
+            <div class="repo-stats"><span><i class="fa-solid fa-ranking-star"></i> 63.2% hard</span><span>Opus 4.7</span><span>GPT-5.5</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide" data-slide="1">
+        <div class="slide-bg slide-bg-2"></div><canvas class="fx-canvas" data-fx="particles"></canvas>
+        <div class="slide-content pixelle-slide-content">
+          <div class="slide-element fade-up">
+            <h2 class="slide-title">Benchmark sát nhóm đầu<br/><span class="gradient-text">không chỉ là hype</span></h2>
+            <div class="webui-frame cursor-source-frame">
+              <img src="source/x-2056415413077233983-photo1.png" alt="Benchmark Composer 2.5 so với Opus 4.7, GPT-5.5 và Composer 2" />
+            </div>
+          </div>
+          <div class="slide-element scale-in">
+            <div class="perf-compare benchmark-perf-compare">
+              <div class="perf-row">
+                <span class="perf-label">C2.5</span>
+                <div class="perf-bar-track"><div class="perf-bar perf-c25"></div></div>
+                <span class="perf-value">63.2</span>
+              </div>
+              <div class="perf-row">
+                <span class="perf-label">Opus</span>
+                <div class="perf-bar-track"><div class="perf-bar perf-opus"></div></div>
+                <span class="perf-value">64.8</span>
+              </div>
+              <div class="perf-row">
+                <span class="perf-label">GPT</span>
+                <div class="perf-bar-track"><div class="perf-bar perf-gpt"></div></div>
+                <span class="perf-value">64.3</span>
+              </div>
+            </div>
+          </div>
+          <div class="slide-element scale-in">
+            <div class="flow-diagram cursor-shift-flow">
+              <div class="flow-node flow-old"><i class="fa-solid fa-minus"></i><span>C2 52.2%</span><div class="flow-strike"></div></div>
+              <div class="flow-arrow"><i class="fa-solid fa-arrow-right-long"></i></div>
+              <div class="flow-node flow-new"><i class="fa-solid fa-arrow-trend-up"></i><span>C2.5 63.2%</span><div class="flow-glow"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide" data-slide="2">
+        <div class="slide-bg slide-bg-3"></div><canvas class="fx-canvas" data-fx="flow"></canvas>
+        <div class="slide-content pixelle-slide-content pipeline-content cursor-cost-content">
+          <div class="slide-element fade-up">
+            <div class="speed-gauge">
+              <div class="gauge-arc"></div>
+              <div class="gauge-needle"></div>
+              <div class="gauge-center"><i class="fa-solid fa-scale-balanced"></i></div>
+            </div>
+            <h2 class="slide-title">Điểm ăn tiền nhất<br/><span class="gradient-text-2">là cost per task</span></h2>
+          </div>
+          <div class="slide-element scale-in">
+            <div class="cpu-chip metric-chip">
+              <div class="chip-body">
+                <div class="chip-pins left"></div>
+                <div class="chip-core">
+                  <i class="fa-solid fa-coins"></i>
+                  <span>10x</span>
+                </div>
+                <div class="chip-pins right"></div>
+              </div>
+              <p class="chip-label">Chi phí/task <strong>thấp hơn nhiều</strong></p>
+            </div>
+          </div>
+          <div class="slide-element scale-in">
+            <div class="stream-visual daily-coding-stream">
+              <div class="stream-pipe">
+                <div class="stream-data d1"></div>
+                <div class="stream-data d2"></div>
+                <div class="stream-data d3"></div>
+              </div>
+              <div class="stream-status"><i class="fa-solid fa-laptop-code"></i> Daily coding</div>
+              <p class="stream-caption">Đủ khỏe để dùng <strong>mỗi ngày</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide" data-slide="3" data-mode="highlight">
+        <div class="slide-bg slide-bg-4"></div><canvas class="fx-canvas" data-fx="rings"></canvas>
+        <div class="slide-content pixelle-slide-content">
+          <div class="slide-element fade-up">
+            <div class="icon-badge icon-badge-large icon-badge-accent"><i class="fa-solid fa-layer-group"></i></div>
+            <h2 class="slide-title">Base model là<br/><span class="gradient-text">Kimi K2.5</span></h2>
+            <div class="flow-diagram cursor-base-flow">
+              <div class="flow-node flow-old"><i class="fa-solid fa-moon"></i><span>Kimi K2.5</span></div>
+              <div class="flow-arrow"><i class="fa-solid fa-arrow-right-long"></i></div>
+              <div class="flow-node flow-new"><i class="fa-solid fa-wave-square"></i><span>Composer 2.5</span><div class="flow-glow"></div></div>
+            </div>
+            <div class="workflow-grid cursor-moat-grid">
+              <div class="workflow-step highlightable">
+                <b>85%</b>
+                <i class="fa-solid fa-microchip"></i>
+                <span>Compute thêm từ training + RL</span>
+              </div>
+              <div class="workflow-step highlightable">
+                <b>MOAT</b>
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>Lợi thế ở pipeline huấn luyện</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide" data-slide="4" data-mode="traffic-light">
+        <div class="slide-bg slide-bg-5"></div><canvas class="fx-canvas" data-fx="noise"></canvas>
+        <div class="slide-content pixelle-slide-content updates-content">
+          <div class="slide-element fade-up">
+            <div class="icon-badge icon-badge-large icon-badge-info"><i class="fa-solid fa-flask-vial"></i></div>
+            <h2 class="slide-title">Blog kỹ thuật lần này<br/><span class="gradient-text">khá gắt</span></h2>
+            <div class="risk-cards-container cursor-tech-risks">
+              <div class="risk-card lightable" data-light-color="red">
+                <div class="risk-icon"><i class="fa-solid fa-layer-group"></i></div>
+                <div class="risk-text">
+                  <strong>25x task</strong>
+                  <span>Synthetic training scale-up</span>
+                </div>
+              </div>
+              <div class="risk-card lightable" data-light-color="yellow">
+                <div class="risk-icon"><i class="fa-solid fa-comment-dots"></i></div>
+                <div class="risk-text">
+                  <strong>Text feedback</strong>
+                  <span>Sửa lỗi cục bộ giữa đường</span>
+                </div>
+              </div>
+              <div class="risk-card lightable" data-light-color="green">
+                <div class="risk-icon"><i class="fa-solid fa-road"></i></div>
+                <div class="risk-text">
+                  <strong>Bám task dài</strong>
+                  <span>Không trượt mục tiêu</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide" data-slide="5">
+        <div class="slide-bg slide-bg-6"></div><canvas class="fx-canvas" data-fx="lorenz"></canvas>
+        <div class="slide-content pixelle-slide-content conclusion-content">
+          <div class="slide-element fade-up">
+            <div class="glowing-conclusion cursor-glowing-conclusion">
+              <div class="glowing-orb"></div>
+              <div class="icon-badge icon-badge-large icon-badge-success"><i class="fa-solid fa-crosshairs"></i></div>
+              <h2 class="slide-title">Chốt lại</h2>
+              <p class="conclusion-text"><strong class="gradient-text">Composer 2.5</strong> chưa chắc số 1</p>
+            </div>
+          </div>
+          <div class="slide-element fade-up">
+            <div class="split-panel active cursor-verdict-panel">
+              <span>Price-performance</span>
+              <strong>Sát Opus 4.7, GPT-5.5<br/>và rẻ hơn nhiều</strong>
+              <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+          </div>
+          <div class="slide-element fade-up">
+            <div class="premium-traffic-box cursor-trend-box">
+              <div class="traffic-housing">
+                <div class="timeline-dot lit-red"></div>
+                <div class="timeline-dot lit-yellow"></div>
+                <div class="timeline-dot lit-green"></div>
+              </div>
+              <div class="traffic-content">
+                <div class="t-item"><strong>API thuê</strong><p>Lớp nền ban đầu</p></div>
+                <div class="t-item"><strong>Fine-tune dọc</strong><p>Sản phẩm tối ưu cho dev</p></div>
+                <div class="t-item"><strong>Model riêng</strong><p>Cuộc chơi dài hạn</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-controls">
+      <button class="side-btn" id="muteBtn" onclick="toggleMute()"><i class="fa-solid fa-volume-high"></i></button>
+      <div class="side-divider"></div>
+      <button class="side-btn" id="prevBtn" onclick="prevSlide()"><i class="fa-solid fa-chevron-up"></i></button>
+      <div class="side-counter"><span id="currentSlide">1</span>/<span id="totalSlides">6</span></div>
+      <button class="side-btn" id="nextBtn" onclick="nextSlide()"><i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+  </div>
+  <script src="app.js?v=preview-editor-slide-tools-sync-20260517"></script>
+</body>
+</html>

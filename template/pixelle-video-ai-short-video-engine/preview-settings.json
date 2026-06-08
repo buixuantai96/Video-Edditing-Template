@@ -1,0 +1,63 @@
+{
+  "theme": {
+    "preset": "creator-pink-blue",
+    "variables": {
+      "--primary": "#ea4c89",
+      "--primary-light": "#ff9ac2",
+      "--primary-dark": "#8f1d50",
+      "--accent": "#4a90e2",
+      "--accent-light": "#9bd3ff",
+      "--info": "#50c878",
+      "--success": "#50c878",
+      "--bg-dark": "#07030d"
+    },
+    "customVariables": {
+      "--primary": "#ea4c89",
+      "--primary-light": "#ff9ac2",
+      "--primary-dark": "#8f1d50",
+      "--accent": "#4a90e2",
+      "--accent-light": "#9bd3ff",
+      "--info": "#50c878",
+      "--success": "#50c878",
+      "--bg-dark": "#07030d"
+    }
+  },
+  "bgm": {
+    "mode": "custom",
+    "preset": "ambient",
+    "volume": 0.3,
+    "custom": {
+      "name": "meta.mp3",
+      "path": "meta.mp3",
+      "url": "meta.mp3"
+    }
+  },
+  "subtitles": {
+    "enabled": true,
+    "color": "#ffffff",
+    "fontSize": 18,
+    "bottom": 152,
+    "maxLines": 1
+  },
+  "visuals": {
+    "colorMode": "dark",
+    "backgroundColor": "#07030d",
+    "gridEnabled": false,
+    "gridLight": "#4a90e2",
+    "iconGlow": "#ea4c89",
+    "iconBacklight": "#4a90e2",
+    "iconLight": "#50c878",
+    "backgroundFx": "particles",
+    "customValues": {
+      "backgroundColor": "#07030d",
+      "gridLight": "#4a90e2",
+      "iconGlow": "#ea4c89",
+      "iconBacklight": "#4a90e2",
+      "iconLight": "#50c878"
+    }
+  },
+  "slides": {
+    "deletedIds": [],
+    "scriptLines": []
+  }
+}
