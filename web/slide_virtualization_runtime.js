@@ -128,6 +128,7 @@
         unmountSlide(index);
       }
     });
+    window.ViroSlideMediaRuntime?.sync?.(center);
   }
 
   function scheduleSync(delay) {
@@ -156,6 +157,7 @@
         mountSlide(slideIndex);
       }
     });
+    window.ViroSlideMediaRuntime?.ensure?.(target);
     scheduleSync(650);
   }
 
@@ -252,6 +254,7 @@
     initialize,
     sync,
     ensure,
+    getSlides: () => state.slides.slice(),
     getRevealUnits,
     calculateSceneTimings,
     isEnabled: () => state.enabled,
