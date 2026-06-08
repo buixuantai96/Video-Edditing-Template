@@ -75,6 +75,76 @@ def guess_whisper_language(line_items: list[dict[str, Any]]) -> str | None:
     return None
 
 
+def _positive_float(value: Any, field: str, index: int) -> float:
+    try:
+        parsed = float(value)
+    except (TypeError, ValueError) as exc:
+        raise ValueError(f"layer {index} has invalid {field}: {value!r}") from exc
+    if parsed <= 0:
+        raise ValueError(f"layer {index} must have positive {field}, got {parsed:g}")
+    return parsed
+
+
+def _layer_duration_seconds(layer: dict[str, Any], index: int, fps: float | None) -> float:
+    for field in ("duration", "duration_seconds", "durationSeconds"):
+        if layer.get(field) is not None:
+            return _positive_float(layer[field], field, index)
+
+    for field in ("duration_in_frames", "durationInFrames"):
+        if layer.get(field) is not None:
+            if not fps:
+                raise ValueError(f"layer {index} uses {field}; fps is required to convert frames to seconds")
+            return _positive_float(layer[field], field, index) / fps
+
+    raise ValueError(f"layer {index} is missing duration")
+
+
+def calculate_scene_timings(raw_layers: list[dict[str, Any]], fps: int | float | None = None) -> list[dict[str, Any]]:
+    """Assign cumulative start offsets to sequential scene/layer data.
+
+    The input can use seconds (duration, duration_seconds, durationSeconds) or,
+    when fps is provided, frame counts (duration_in_frames, durationInFrames).
+    The returned dictionaries keep original fields and add normalized timing keys.
+    """
+    frame_rate = float(fps) if fps is not None else None
+    if frame_rate is not None and frame_rate <= 0:
+        raise ValueError(f"fps must be positive, got {frame_rate:g}")
+
+    timed_layers: list[dict[str, Any]] = []
+    current_seconds = 0.0
+    current_frame = 0
+
+    for index, raw_layer in enumerate(raw_layers):
+        if not isinstance(raw_layer, dict):
+            raise TypeError(f"layer {index} must be a dict")
+
+        layer = dict(raw_layer)
+        duration_seconds = _layer_duration_seconds(layer, index, frame_rate)
+
+        if frame_rate is not None:
+            duration_frames = int(round(duration_seconds * frame_rate))
+            if duration_frames <= 0:
+                raise ValueError(f"layer {index} duration rounds to 0 frames at {frame_rate:g} fps")
+            start_frame = current_frame
+            current_frame += duration_frames
+            current_seconds = current_frame / frame_rate
+
+            layer["start_frame"] = start_frame
+            layer["startFrame"] = start_frame
+            layer["duration_in_frames"] = duration_frames
+            layer["durationInFrames"] = duration_frames
+            layer["start"] = round(start_frame / frame_rate, 3)
+            layer["duration"] = round(duration_frames / frame_rate, 3)
+        else:
+            layer["start"] = round(current_seconds, 3)
+            layer["duration"] = round(duration_seconds, 3)
+            current_seconds += duration_seconds
+
+        timed_layers.append(layer)
+
+    return timed_layers
+
+
 def line_audio_path(output_dir: Path, line_number: int) -> Path:
     return output_dir / f"line_{line_number}.mp3"
 

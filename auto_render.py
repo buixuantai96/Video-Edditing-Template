@@ -833,10 +833,16 @@ def prepare_recording_html(
     html = html_path.read_text(encoding="utf-8")
     base_tag = f'<base href="{slide_dir.as_uri()}/" />'
     settings_payload = json.dumps(preview_settings or {}, ensure_ascii=False).replace("</", "<\\/")
+    virtualization_payload = json.dumps(
+        {"enabled": "auto", "minSlides": 12, "bufferSlides": 2},
+        ensure_ascii=False,
+    ).replace("</", "<\\/")
     html = html.replace("<head>", f"<head>\n{base_tag}", 1)
     html = html.replace(
         "</head>",
-        f"<script>window.__RENDER_MODE__ = true; window.__PREVIEW_SETTINGS__ = {settings_payload};</script>\n</head>",
+        f"<script>window.__RENDER_MODE__ = true; "
+        f"window.__PREVIEW_SETTINGS__ = {settings_payload}; "
+        f"window.__VIRO_VIRTUALIZATION__ = {virtualization_payload};</script>\n</head>",
         1,
     )
     html = html.replace("</head>", f"{AUDIO_CAPTURE_SCRIPT}\n</head>", 1)
@@ -845,6 +851,9 @@ def prepare_recording_html(
     media_runtime = Path(__file__).resolve().parent / "web" / "slide_media_runtime.js"
     if media_runtime.exists():
         html = html.replace("</body>", f"<script>{media_runtime.read_text(encoding='utf-8')}</script>\n</body>", 1)
+    virtualization_runtime = Path(__file__).resolve().parent / "web" / "slide_virtualization_runtime.js"
+    if virtualization_runtime.exists():
+        html = html.replace("</body>", f"<script>{virtualization_runtime.read_text(encoding='utf-8')}</script>\n</body>", 1)
     if theme_css:
         html = html.replace("</head>", f"<style>{theme_css}</style>\n</head>", 1)
     if subtitle_data:
@@ -870,16 +879,24 @@ async def inspect_reveal_units(recording_html: Path) -> list[int]:
         await page.goto(recording_html.as_uri())
         units = await page.evaluate(
             """
-            () => Array.from(document.querySelectorAll('.slide')).map((slide) => {
-              let count = slide.querySelectorAll('.slide-element').length;
-              if (slide.dataset.mode === 'highlight') {
-                count += slide.querySelectorAll('.highlightable').length;
+            () => {
+              if (window.ViroSlideVirtualization?.initialize) {
+                window.ViroSlideVirtualization.initialize();
               }
-              if (slide.dataset.mode === 'traffic-light') {
-                count += slide.querySelectorAll('.lightable').length;
+              if (window.ViroSlideVirtualization?.getRevealUnits) {
+                return window.ViroSlideVirtualization.getRevealUnits();
               }
-              return count;
-            })
+              return Array.from(document.querySelectorAll('.slide')).map((slide) => {
+                let count = slide.querySelectorAll('.slide-element').length;
+                if (slide.dataset.mode === 'highlight') {
+                  count += slide.querySelectorAll('.highlightable').length;
+                }
+                if (slide.dataset.mode === 'traffic-light') {
+                  count += slide.querySelectorAll('.lightable').length;
+                }
+                return count;
+              });
+            }
             """
         )
         await browser.close()
